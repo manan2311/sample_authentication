@@ -1,0 +1,72 @@
+<%- include("../partials/header") %>
+<p>
+<h1 class="container jumbotron " id="heading-box">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Create New Campgrounds
+</h1>
+</p>
+<form action="/campgrounds" method="POST">
+  <input
+    class="form-control"
+    id="form"
+    type="text"
+    name="name"
+    placeholder="Campground Name"
+  />
+  <p></p>
+
+  <input
+    id="form"
+    class="form-control"
+    type="text"
+    name="image"
+    placeholder="Image url"
+  />
+  <p></p>
+
+  <input
+    id="form"
+    type="text"
+    class="form-control"
+    name="description"
+    placeholder="Description"
+  />
+  <p></p>
+
+  <button id="button" class="form-control" type="submit">
+    <b>Submit</b>
+  </button>
+</form>
+
+<style type="text/css">
+  #form {
+    background-color: azure;
+    margin: auto;
+    padding: 5px;
+    height: 50px;
+    width: 850;
+  }
+  #button {
+    background-color: rgb(50, 148, 151);
+    margin: auto;
+    padding: 5px;
+    height: 50px;
+    width: 250px;
+    border: darkslateblue 1px solid;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(24, 26, 26);
+    text-decoration: darkgrey;
+  }
+
+#heading-box{
+  padding-top: 45px;
+ padding-bottom: 20px;
+  height: 150px;
+  width: 890px;
+}
+
+  h1{
+    padding-bottom: 20px;
+  }
+</style>

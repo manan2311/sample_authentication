@@ -1,0 +1,58 @@
+<%- include("partials/header") %>
+
+<div class="jumbotron container" id="outer-box">
+  <form action="/login" method="POST">
+    <p>
+      <input
+        class="form-control"
+        id="form"
+        type="text"
+        name="username"
+        placeholder="Username"
+      />
+    </p>
+    <p>
+      <input
+        class="form-control"
+        id="form"
+        type="text"
+        name="password"
+        placeholder="Password"
+      />
+    </p>
+    <p>
+      <input id="button" type="submit" class="form-control" value="login" />
+    </p>
+  </form>
+</div>
+
+<style>
+  #form {
+    background-color: azure;
+    margin: auto;
+    padding: 5px;
+    height: 40px;
+    width: 350px;
+    border: rgb(24, 26, 26) 1px solid;
+  }
+  #button {
+    background-color: rgb(208, 216, 216);
+    margin: auto;
+    padding: 5px;
+    height: 50px;
+    width: 250px;
+    border: rgb(208, 208, 211) 1px solid;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(24, 26, 26);
+    text-decoration: darkgrey;
+    margin-top: 50px;
+    border: rgb(48, 53, 53) 1px solid;
+  }
+  #outer-box {
+    background-color: rgb(248, 246, 246);
+    border: rgb(24, 26, 26) 1px solid;
+    height: 320px;
+    width: 430px;
+  }
+</style>

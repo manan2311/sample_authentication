@@ -1,0 +1,19 @@
+<%- include("../partials/header") %>
+
+<div class="jumbotron">
+ 
+ <div class="container"></div> <h1>Campgrounds Page</h1>
+  <p class="btn btn-lr">
+    <a href="/campgrounds/new">Add New campgrounds</a>
+  </p>
+  </div>
+</div>
+<div class="container">
+<% campgrounds.forEach(function(campgrounds){ %>
+<div></div>
+  <h4><%= campgrounds.name %></h4>
+  <img src=" <%= campgrounds.image %>" />
+</div>
+
+<% }); %> <%- include("../partials/footer") %>
+</div>

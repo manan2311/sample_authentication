@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand container" href="/">YELPCAMP</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="ml-auto">
+            <% if(!currentUser){ %>
+
+            <a id="nav" class="navbar-brand" href="/login">Login</a>
+            <a id="nav" class="navbar-brand" href="/register">Sign_Up</a>
+
+            <% } else { %>
+            <p id="nav" class="navbar-brand">
+              Hi - <%= currentUser.username %>
+            </p>
+            <a id="nav" class="navbar-brand" href="/logout">Logout</a>
+
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <p></p>
+    <style>
+      #nav {
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: firebrick;
+        padding: 1px;
+        text-decoration: red;
+        margin-top: 14px;
+      }
+    </style>
+  </body>
+</html>

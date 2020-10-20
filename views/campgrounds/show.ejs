@@ -1,0 +1,19 @@
+<%- include("../partials/header") %>
+<div class="jumbotron container">
+<p> <h2> <%= campgrounds.name %> </h2> </p>
+
+  <img class="img-responsive" src="<%= campgrounds.image %> " />
+
+  <p>
+    <%= campgrounds.description %></p>
+
+
+
+<a class="btn btn-primary" href="/campgrounds/<%= campgrounds._id %>/edit" >edit</a> 
+<p>
+<form   method="POST"  action="/campgrounds/<%= campgrounds._id %>?_method=DELETE" >
+<button class="btn btn-danger">delete</button></form>
+</p>
+
+  
+</div>
